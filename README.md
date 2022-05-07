@@ -1,4 +1,6 @@
-# Landing Page (🧱 em construção 🧱)
+# Landing Page 
+(🧱 em construção 🧱)<br>
+
 *Landing Page básica com intuito de revisar conhecimentos passados e implementar novos*
 
 - **Tecnologias Foco:** <br>
