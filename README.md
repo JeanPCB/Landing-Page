@@ -8,4 +8,4 @@
 ✔ Html <br>
 ✔ CSS
 
-🔗 <a href="https://jeanpcb.github.io/Landing-Page/">Clique pra conferir</a> 😉
+🔗 <a href="https://jeanpcb.github.io/Landing-Page/">Clica pra conferir</a> 😉
