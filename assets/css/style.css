@@ -71,3 +71,32 @@ p {
     background-size: 100%;
     color: var(--clr-main-bg);
 }
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 100%;
+    position: fixed;
+    padding: 0 var(--gap);
+    background-color: #fff;
+    color: #000;
+}
+
+
+.menu-list, .menu-list > a, .menu-list > a:visited {
+    text-decoration: none;
+    list-style: none;
+    color: initial;
+}
+
+.navbar > .menu-list {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.8rem;
+}
+
+.navbar > .menu-list > a {
+    margin: 2rem;
+}
