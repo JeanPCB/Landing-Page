@@ -1,4 +1,4 @@
-# Landing Page 
+# Landing Page Básica 
 (🧱 em construção 🧱)<br>
 
 *Landing Page básica com intuito de revisar conhecimentos passados e implementar novos*
