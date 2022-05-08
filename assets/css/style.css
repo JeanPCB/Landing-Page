@@ -2,6 +2,7 @@
     --clr-primary: #0D1736;
     --clr-main-bg: #fff;
     --gap: calc(1rem + 2vw);
+    ---main-trans-time: 0.3s;
 }
 
 * {
@@ -99,4 +100,20 @@ p {
 
 .navbar > .menu-list > a {
     margin: 2rem;
+    position: relative;
+}
+
+.navbar > .menu-list > a::after {
+    content: '';
+    position: absolute;
+    background-color: crimson;
+    height: 3px;
+    transform: scaleX(0);
+    width: 100%;
+    bottom: -5px;
+    transition: var(---main-trans-time);
+}
+
+.navbar > .menu-list > a:hover::after {
+    transform: scaleX(1);
 }
