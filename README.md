@@ -1,4 +1,4 @@
-# Landing Page Básica 
+# Landing Page de Revisão 
 
 (🧱 em construção 🧱)
 
