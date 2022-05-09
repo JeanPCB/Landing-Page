@@ -101,6 +101,11 @@ p {
 .navbar > .menu-list > a {
     margin: 2rem;
     position: relative;
+    transition: var(---main-trans-time);
+}
+
+.navbar > .menu-list > a:hover {
+    transform: scale(1.1);
 }
 
 .navbar > .menu-list > a::after {
