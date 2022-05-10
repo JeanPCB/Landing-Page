@@ -1,6 +1,8 @@
 :root {
     --clr-primary: #0D1736;
     --clr-main-bg: #fff;
+    --large-gap: calc(1rem + 5vw);
+    --medium-gap: calc(1rem + 3vw);
     --gap: calc(1rem + 2vw);
     ---main-trans-time: 0.3s;
 }
@@ -52,13 +54,14 @@ h6 {
 
 p {
     font-size: clamp(1.2rem, 1rem + 1.4vw, 1.6rem);
+    line-height: 1.5;
 }
 
 .section {
     display: flex;
     min-width: 100%;
     min-height: 100vh;
-    padding: var(--gap);
+    padding: var(--medium-gap) var(--large-gap);
 }
 
 .section-container {
@@ -70,6 +73,10 @@ p {
     background-image: url(../img/scattered-forcefields.svg);
     background-size: 100%;
     color: var(--clr-main-bg);
+}
+
+.secondary-bg {
+    color: #fff;
 }
 
 .menu {
@@ -130,4 +137,29 @@ p {
 
 .navbar > .menu-list a:hover::after {
     transform: scaleX(1);
+}
+
+.intro-container {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    align-items: center;
+    gap: var(--large-gap);
+    margin-bottom: 8rem;
+}
+
+.intro-text-content {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.intro-text-content > h1 {
+    font-size: clamp(2.8rem, 1rem + 5vw, 5.5rem);
+    margin-bottom: var(--gap);
+    text-transform: uppercase;
+    line-height: 1.4;
+}
+
+.intro-img > img {
+    max-width: 100%;
 }
