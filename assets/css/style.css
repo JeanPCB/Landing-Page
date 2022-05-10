@@ -3,6 +3,7 @@
     --clr-main-bg: #fff;
     --large-gap: calc(1rem + 5vw);
     --medium-gap: calc(1rem + 3vw);
+    --small-gap: calc(1rem + 1vw);
     --gap: calc(1rem + 2vw);
     ---main-trans-time: 0.3s;
 }
@@ -18,6 +19,7 @@ font-family: 'Open Sans', sans-serif; */
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -26,14 +28,15 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
 }
 
 h1 {
-    font-size: clamp(2.4rem, 1rem + 2.2vw, 4rem);
+    font-size: clamp(2.4rem, 1rem + 2.8vw, 4rem);
 }
 
 h2 {
-    font-size: clamp(2rem, 1rem + 2vw, 3.2rem);
+    font-size: clamp(2rem, 1rem + 2.4vw, 3.2rem);
 }
 
 h3 {
@@ -57,6 +60,11 @@ p {
     line-height: 1.5;
 }
 
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
 .section {
     display: flex;
     min-width: 100%;
@@ -66,7 +74,6 @@ p {
 
 .section-container {
     max-width: 1200px;
-    background-color: #000;
 }
 
 .main-bg {
@@ -76,7 +83,7 @@ p {
 }
 
 .secondary-bg {
-    color: #fff;
+    background-color: #fff;
 }
 
 .menu {
@@ -89,22 +96,23 @@ p {
     position: fixed;
     padding: 0 var(--gap);
     background-color: #fff;
-    color: #000;
-}
-
-.menu-item {
-    font-size: clamp(1.4rem, 1rem + 1vw, 1.8rem);
+    color: var(--clr-primary);
+    border-top: 3px solid #fff;
+    border-bottom: 3px solid #d8d8d8;
 }
 
 .menu-spacing {
     height: 5.2rem;
 }
 
-
-.menu-list, .menu-list a, .menu-list a:visited {
-    text-decoration: none;
+.menu-list {
     list-style: none;
-    color: initial;
+}
+
+.menu-item, .menu-item:visited {
+    font-size: clamp(1.4rem, 1rem + 1vw, 1.8rem);
+    text-decoration: none;
+    color: var(--clr-primary);
 }
 
 .navbar > .menu-list {
@@ -116,11 +124,6 @@ p {
 .navbar > .menu-list a {
     margin: 2rem;
     position: relative;
-    transition: var(---main-trans-time);
-}
-
-.navbar > .menu-list li:hover {
-    transform: scale(1.1);
 }
 
 .navbar > .menu-list a::after {
@@ -128,15 +131,15 @@ p {
     position: absolute;
     background-color: crimson;
     height: 3px;
-    transform: scaleX(0);
-    width: 100%;
+    width: 0;
     bottom: -5px;
-    left: 0;
-    transition: var(---main-trans-time);
+    left: 50%;
+    transition: width var(---main-trans-time), left var(---main-trans-time);
 }
 
 .navbar > .menu-list a:hover::after {
-    transform: scaleX(1);
+    left: 0;
+    width: 100%;
 }
 
 .intro-container {
@@ -153,13 +156,26 @@ p {
     justify-content: center;
 }
 
-.intro-text-content > h1 {
+.intro-text-content > h2 {
     font-size: clamp(2.8rem, 1rem + 5vw, 5.5rem);
     margin-bottom: var(--gap);
-    text-transform: uppercase;
     line-height: 1.4;
 }
 
 .intro-img > img {
     max-width: 100%;
+}
+
+.top-3-container {
+    display: flex;
+    flex-flow: column wrap;
+    max-width: 64rem;
+    gap: var(--medium-gap);
+    text-align: center;
+}
+
+.top-3-content {
+    display: flex;
+    flex-flow: inherit;
+    gap: var(--small-gap);
 }
