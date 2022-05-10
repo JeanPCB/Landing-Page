@@ -86,7 +86,7 @@ p {
 }
 
 
-.menu-list, .menu-list > a, .menu-list > a:visited {
+.menu-list, .menu-list a, .menu-list a:visited {
     text-decoration: none;
     list-style: none;
     color: initial;
@@ -98,17 +98,17 @@ p {
     font-size: 1.8rem;
 }
 
-.navbar > .menu-list > a {
+.navbar > .menu-list a {
     margin: 2rem;
     position: relative;
     transition: var(---main-trans-time);
 }
 
-.navbar > .menu-list > a:hover {
+.navbar > .menu-list li:hover {
     transform: scale(1.1);
 }
 
-.navbar > .menu-list > a::after {
+.navbar > .menu-list a::after {
     content: '';
     position: absolute;
     background-color: crimson;
@@ -116,9 +116,10 @@ p {
     transform: scaleX(0);
     width: 100%;
     bottom: -5px;
+    left: 0;
     transition: var(---main-trans-time);
 }
 
-.navbar > .menu-list > a:hover::after {
+.navbar > .menu-list a:hover::after {
     transform: scaleX(1);
 }
