@@ -1,21 +1,31 @@
+/*
+IMPORTERD FONTS:
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif; 
+*/
+
 :root {
+    /* Colors */
     --clr-primary: #0D1736;
     --clr-main-bg: #fff;
+
+    /* Spaces */
     --large-gap: calc(1rem + 5vw);
     --medium-gap: calc(1rem + 3vw);
     --small-gap: calc(1rem + 1vw);
     --gap: calc(1rem + 2vw);
+
+    /* Times */
     ---main-trans-time: 0.3s;
 }
+
+/* CSS Reset */
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-/* font-family: 'Montserrat', sans-serif;
-font-family: 'Open Sans', sans-serif; */
 
 html {
     font-size: 62.5%;
@@ -60,6 +70,10 @@ p {
     line-height: 1.5;
 }
 
+/* END */
+
+/* Global Structure Presets */
+
 .flex-center {
     justify-content: center;
     align-items: center;
@@ -85,6 +99,8 @@ p {
 .secondary-bg {
     background-color: #fff;
 }
+
+/* END */
 
 .menu {
     display: flex;
