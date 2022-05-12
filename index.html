@@ -15,11 +15,20 @@
 </head>
 
 <body>
+    <span id="home"></span>
+
     <aside class="menu">
-        <h1>LOGO</h1>
+        <a class="logo-anchor" href="./index.html">
+            <h1 >LOGO</h1>
+        </a>
 
         <nav class="navbar">
             <ul class="menu-list">
+                <li>
+                    <a href="#home" class="menu-item">
+                        Home
+                    </a>
+                </li>
                 <li>
                     <a href="#intro" class="menu-item">
                         Intro
@@ -28,11 +37,6 @@
                 <li>
                     <a href="#top3" class="menu-item">
                         Top 3
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="menu-item">
-                        Gallery
                     </a>
                 </li>
                 <li>
@@ -51,10 +55,10 @@
 
     <div class="menu-spacing"></div>
 
-    <section id="intro" class="section main-bg">
-        <div class="intro-container">
-            <div class="intro-text-content">
-                <h2>MDN Plus now available in more countries</h2>
+    <section class="section primary-bg">
+        <div class="home-container">
+            <div class="home-text-content">
+                <h2 class="primary-title">MDN Plus now available in more countries</h2>
                 <p>
                     Almost a month ago, we announced MDN Plus, a new premium service on MDN that allows users to customize their
                     experience on the website.
@@ -64,17 +68,17 @@
                 </p>
             </div>
 
-            <div class="intro-img">
+            <div class="home-img">
                 <img src="./assets/img/javascript.svg" alt="Um desenho de: um homem segurando a logo do CSS3 ao centro, uma mulher empurrando a logo do JavaScript, de fundo, e outro homem empurrando a logo do HTML5 à direita ">
             </div>
         </div>
     </section>
 
-    <section id="top3" class="section secondary-bg flex-center" >
-        <div class="top-3-container">
-            <h2>top 3 jobs</h2>
+    <section id="intro" class="section secondary-bg flex-center" >
+        <div class="intro-container">
+            <h2 class="secondary-title">Intro</h2>
 
-            <div class="top-3-content">
+            <div class="intro-content">
                 <p>
                     Brock would have never dared to do it on his own he thought to himself. That is why Kenneth and he had become such good friends. Kenneth forced Brock out of his comfort zone and made him try new things he'd never imagine doing otherwise. Up to this point, this had been a good thing. It had expanded Brock's experiences and given him a new appreciation for life. Now that both of them were in the back of a police car, all Brock could think was that he would have never dared do it except for the influence of Kenneth.
                 </p>
@@ -88,9 +92,40 @@
         </div>
     </section>
 
-    <section class="section main-bg"></section>
+    <section id="top3" class="section primary-bg section-container">
+        <div class="top3-intro-div">
+            <h2 class="secondary-title">my top 3 jobs</h2>
+            <p>A short description.</p>
+        </div>
 
-    <script src="./assets/js/main.js"></script>
+        <div class="row-1-col-3-grid">
+            <article>
+                <h3>First Job</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae id libero et quos, ducimus nostrum eligendi provident mollitia nesciunt ipsum ex eveniet deleniti ea. Id necessitatibus saepe sit ab asperiores!
+                    ex quis eum, voluptates suscipit vel nobis quas dolorum, deserunt molestiae dignissimos. Provident quasi deleniti qui!
+                </p>
+            </article>
+
+            <article>
+                <h3>Second Job</h3>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga minus autem quisquam deleniti culpa ex quis eum, voluptates suscipit vel nobis quas dolorum, deserunt molestiae dignissimos. Provident quasi deleniti qui!
+                    ex quis eum, voluptates suscipit vel nobis quas dolorum, deserunt molestiae dignissimos. Provident quasi deleniti qui!
+                </p>
+            </article>
+
+            <article>
+                <h3>Third Job</h3>
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet iure enim officia beatae perferendis sed magnam voluptate. Maiores amet nisi, totam animi quidem accusamus modi impedit? Aperiam in perferendis excepturi?
+                    ex quis eum, voluptates suscipit vel nobis quas dolorum, deserunt molestiae dignissimos. Provident quasi deleniti qui!
+                </p>
+            </article>
+        </div>
+    </section>
+
+    <section class="section secondary-bg"></section>
 </body>
 
 </html>

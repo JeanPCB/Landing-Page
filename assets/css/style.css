@@ -7,7 +7,7 @@ IMPORTERD FONTS:
 :root {
     /* Colors */
     --clr-primary: #0D1736;
-    --clr-main-bg: #fff;
+    --clr-primary-bg: #fff;
 
     /* Spaces */
     --large-gap: calc(1rem + 5vw);
@@ -17,6 +17,10 @@ IMPORTERD FONTS:
 
     /* Times */
     ---main-trans-time: 0.3s;
+
+    /* Fonts */
+    --primary-title: clamp(2.8rem, 1rem + 5vw, 5.5rem);
+    --secondary-title: clamp(2.4rem, 1rem + 3vw, 4.2rem)
 }
 
 /* CSS Reset */
@@ -50,11 +54,11 @@ h2 {
 }
 
 h3 {
-    font-size: clamp(1.8rem, 1rem + 1.8vw, 3rem);
+    font-size: clamp(1.8rem, 1rem + 1.8vw, 2.8rem);
 }
 
 h4 {
-    font-size: clamp(1.6rem, 1rem + 1.6vw, 2.8rem);
+    font-size: clamp(1.6rem, 1rem + 1.6vw, 2.6rem);
 }
 
 h5 {
@@ -81,26 +85,50 @@ p {
 
 .section {
     display: flex;
+    flex-flow: column wrap;
     min-width: 100%;
     min-height: 100vh;
-    padding: var(--medium-gap) var(--large-gap);
+    padding: var(--large-gap);
 }
 
 .section-container {
     max-width: 1200px;
 }
 
-.main-bg {
+.primary-bg {
     background-image: url(../img/scattered-forcefields.svg);
     background-size: 100%;
-    color: var(--clr-main-bg);
+    color: var(--clr-primary-bg);
 }
 
 .secondary-bg {
     background-color: #fff;
 }
 
+.primary-title {
+    font-size: var(--primary-title);
+}
+
+.secondary-title {
+    font-size: var(--secondary-title);
+}
+
+.menu-list {
+    list-style: none;
+}
+
+.row-1-col-3-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--large-gap);
+}
+
 /* END */
+
+.logo-anchor, .logo-anchor:visited {
+    text-decoration: none;
+    color: var(--clr-primary);
+}
 
 .menu {
     display: flex;
@@ -121,28 +149,24 @@ p {
     height: 5.2rem;
 }
 
-.menu-list {
-    list-style: none;
-}
-
 .menu-item, .menu-item:visited {
     font-size: clamp(1.4rem, 1rem + 1vw, 1.8rem);
     text-decoration: none;
     color: var(--clr-primary);
 }
 
-.navbar > .menu-list {
+.navbar .menu-list {
     display: flex;
     flex-direction: row;
     font-size: 1.8rem;
 }
 
-.navbar > .menu-list a {
+.navbar .menu-list a {
     margin: 2rem;
     position: relative;
 }
 
-.navbar > .menu-list a::after {
+.navbar .menu-list a::after {
     content: '';
     position: absolute;
     background-color: crimson;
@@ -153,12 +177,12 @@ p {
     transition: width var(---main-trans-time), left var(---main-trans-time);
 }
 
-.navbar > .menu-list a:hover::after {
+.navbar .menu-list a:hover::after {
     left: 0;
     width: 100%;
 }
 
-.intro-container {
+.home-container {
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     align-items: center;
@@ -166,23 +190,22 @@ p {
     margin-bottom: 8rem;
 }
 
-.intro-text-content {
+.home-text-content {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
 }
 
-.intro-text-content > h2 {
-    font-size: clamp(2.8rem, 1rem + 5vw, 5.5rem);
+.home-text-content h2 {
     margin-bottom: var(--gap);
     line-height: 1.4;
 }
 
-.intro-img > img {
+.home-img  img {
     max-width: 100%;
 }
 
-.top-3-container {
+#intro .intro-container {
     display: flex;
     flex-flow: column wrap;
     max-width: 64rem;
@@ -190,8 +213,43 @@ p {
     text-align: center;
 }
 
-.top-3-content {
+#intro .intro-content {
     display: flex;
     flex-flow: inherit;
     gap: var(--small-gap);
+}
+
+#top3 {
+    justify-content: center;
+}
+
+#top3 .row-1-col-3-grid {
+    margin-bottom: 8rem;
+    counter-reset: top3-counter;
+}
+
+#top3 .top3-intro-div {
+    margin-bottom: var(--large-gap);
+}
+
+#top3 article {
+    display: flex;
+    flex-flow: column wrap;
+    gap: var(--small-gap);
+}
+
+#top3 .row-1-col-3-grid article  h3 {
+    text-transform: capitalize;
+    position: relative;
+    left: 40px;
+}
+
+#top3 article h3::before {
+    counter-increment: top3-counter;
+    content: counter(top3-counter);
+    font-size: var(--primary-title);
+    position: absolute;
+    transform: rotate(5deg);
+    top: -15px;
+    left: -40px;
 }
