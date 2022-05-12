@@ -10,8 +10,8 @@ IMPORTERD FONTS:
     --clr-primary-bg: #fff;
 
     /* Spaces */
-    --biggest-gap: calc(1rem + 7vw);
-    --large-gap: calc(1rem + 5vw);
+    --biggest-gap: calc(5rem + 5vw);
+    --large-gap: calc(2rem + 5vw);
     --medium-gap: calc(1rem + 3vw);
     --small-gap: calc(1rem + 1vw);
     --gap: calc(1rem + 2vw);
@@ -84,12 +84,20 @@ p {
     align-items: center;
 }
 
+.intro-section {
+    display: flex;
+    flex-flow: column wrap;
+    min-width: 100%;
+    min-height: 100vh;
+    padding: var(--medium-gap) var(--biggest-gap);
+}
+
 .section {
     display: flex;
     flex-flow: column wrap;
     min-width: 100%;
     min-height: 100vh;
-    padding: var(--large-gap);
+    padding: var(--biggest-gap);
 }
 
 .section-container {
