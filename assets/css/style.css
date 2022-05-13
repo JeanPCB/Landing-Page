@@ -7,7 +7,8 @@ IMPORTERD FONTS:
 :root {
     /* Colors */
     --clr-primary: #0D1736;
-    --clr-primary-bg: #fff;
+    --clr-secondary: #fff;
+    --clr-primary-light: #101f4a;
 
     /* Spaces */
     --biggest-gap: calc(5rem + 5vw);
@@ -21,7 +22,8 @@ IMPORTERD FONTS:
 
     /* Fonts */
     --primary-title: clamp(2.8rem, 1rem + 5vw, 5.5rem);
-    --secondary-title: clamp(2.4rem, 1rem + 3vw, 4.2rem)
+    --secondary-title: clamp(2.4rem, 1rem + 3vw, 4.2rem);
+    --paragraph: clamp(1.2rem, 1rem + 1.4vw, 1.6rem);
 }
 
 /* CSS Reset */
@@ -75,6 +77,30 @@ p {
     line-height: 1.5;
 }
 
+table {
+    font-size: var(--paragraph);
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 36rem;
+    white-space: nowrap;
+}
+
+table caption {
+    font-size: clamp(1rem, 1rem + 1.25vw, 1.6rem);
+    padding: 1rem;
+    text-align: left;
+}
+
+table td, table th {
+    border: 1px solid var(--clr-primary-light);
+    text-align: left;
+    padding: 0.5rem;
+}
+
+tfoot td {
+    background-color: var(--clr-primary-light);
+}
+
 /* END */
 
 /* Global Structure Presets */
@@ -101,17 +127,26 @@ p {
 }
 
 .section-container {
-    max-width: 1200px;
+    max-width: 120rem;
+}
+
+.small-container {
+    display: flex;
+    flex-flow: column wrap;
+    max-width: 64rem;
+    width: 100%;
+    gap: var(--medium-gap);
+    text-align: center;
 }
 
 .primary-bg {
     background-image: url(../img/scattered-forcefields.svg);
     background-size: 100%;
-    color: var(--clr-primary-bg);
+    color: var(--clr-secondary);
 }
 
 .secondary-bg {
-    background-color: #fff;
+    background-color: var(--clr-secondary);
     color: var(--clr-primary);
 }
 
@@ -216,13 +251,6 @@ p {
     max-width: 100%;
 }
 
-#intro .intro-container {
-    display: flex;
-    flex-flow: column wrap;
-    max-width: 64rem;
-    gap: var(--medium-gap);
-    text-align: center;
-}
 
 #intro .intro-content {
     display: flex;
@@ -284,4 +312,10 @@ p {
 
 #gallery .gallery-img img:hover {
     transform: translate(-3%, 3%) scale(1.2) rotate(5deg);
+}
+
+.pricing-table {
+    width: 100%;
+    overflow: hidden;
+    overflow-x: auto;
 }
