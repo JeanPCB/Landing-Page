@@ -430,12 +430,11 @@ footer {
     width: 0;
     left: 50%;
     top: 25px;
-    background-color: var(--clr-secondary);
+    background-color: var(--clr-tertiary-light);
     transition: var(---main-trans-time);
 }
 
 .footer-section a:hover::after {
     left: 0;
     width: 100%;
-    background-color: var(--clr-secondary);
 }
