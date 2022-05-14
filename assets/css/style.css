@@ -8,7 +8,10 @@ IMPORTERD FONTS:
     /* Colors */
     --clr-primary: #0D1736;
     --clr-secondary: #fff;
+    --clr-secondary-darker: #a5a5a5;
     --clr-primary-light: #101f4a;
+    --clr-tertiary: #c86d12;
+    --clr-tertiary-light: #ff8000;
 
     /* Spaces */
     --biggest-gap: calc(5rem + 5vw);
@@ -99,6 +102,11 @@ table td, table th {
 
 tfoot td {
     background-color: var(--clr-primary-light);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
 }
 
 /* END */
@@ -361,11 +369,72 @@ tfoot td {
     margin: 0.5rem 0;
     padding: 1rem 0.5rem;
     font-size: 1.6rem;
+    border: 1px solid;
+    transition: var(---main-trans-time);
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    outline: none;
+    border: none;
+    box-shadow: 0 0 2px 2px var(--clr-primary-light);
 }
 
 .form-group textarea{
+    border: 1px solid;
     margin: 0.5rem 0;
     padding: 1rem 0.5rem;
     font-size: 2rem;
     resize: none;
+}
+
+.form-group button {
+    float: right;
+    margin-top: 1rem;
+    padding: 2rem;
+    font-size: 1.6rem;
+    border: 2px solid;
+    border-radius: 5px;
+    transition: var(---main-trans-time);
+}
+
+.form-group button:hover {
+    cursor: pointer;
+    color: var(--clr-secondary);
+    border: 2px solid var(--clr-secondary);
+    box-shadow: 10px 10px 5px 2px var(--clr-primary-light);
+    background-color: var(--clr-primary-light);
+    transform: translate(-10px, -10px);
+}
+
+.footer-section {
+    background-color: var(--clr-primary);
+    color: var(--clr-secondary-darker);
+    padding: 2rem;
+}
+
+.footer-section a, .footer-section a:visited {
+    text-decoration: none;
+    color: var(--clr-tertiary);
+    position: relative;
+}
+
+.footer-section a:hover {
+    color: var(--clr-tertiary-light);
+}
+
+.footer-section a::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 0;
+    left: 50%;
+    top: 25px;
+    background-color: var(--clr-secondary);
+    transition: var(---main-trans-time);
+}
+
+.footer-section a:hover::after {
+    left: 0;
+    width: 100%;
+    background-color: var(--clr-secondary);
 }
