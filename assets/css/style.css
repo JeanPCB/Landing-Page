@@ -375,8 +375,8 @@ footer {
 
 .form-group input:focus, .form-group textarea:focus {
     outline: none;
-    border: none;
-    box-shadow: 0 0 2px 2px var(--clr-primary-light);
+    border: 1px solid var(--clr-secondary);
+    box-shadow: 0 0 5px 2px var(--clr-primary-light);
 }
 
 .form-group textarea{
