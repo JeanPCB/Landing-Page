@@ -133,6 +133,7 @@ footer {
 .section {
     display: flex;
     flex-flow: column wrap;
+    align-items: center;
     min-width: 100%;
     min-height: 100vh;
     padding: var(--biggest-gap);
