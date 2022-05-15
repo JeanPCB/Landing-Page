@@ -454,7 +454,8 @@ footer {
     color: var(--clr-primary);
     background-color: var(--clr-secondary);
     border: 1px solid var(--clr-primary);
-    border-radius: 100%;
+    border-radius: 10px;
+    transform: rotate(-90deg);
 }
 
 @media (max-width: 800px) {
@@ -486,7 +487,7 @@ footer {
         padding: 1rem;
         font-size: 2rem;
         border: 1px solid var(--clr-primary);
-        border-radius: 100%;
+        border-radius: 10px;
         top: 2rem;
         right: 2rem;
         color: var(--clr-primary);
