@@ -365,7 +365,13 @@ footer {
     text-transform: uppercase;
 }
 
-.form-group {
+.input-container  {
+    display: flex;
+    flex-flow: row wrap;
+    gap: var(--gap) var(--biggest-gap)
+}
+
+.input-container .form-group {
     flex-grow: 1;
 }
 
@@ -376,6 +382,7 @@ footer {
     font-size: 1.6rem;
     border: 1px solid;
     transition: var(---main-trans-time);
+    width: 100%;
 }
 
 .form-group input:focus, .form-group textarea:focus {
@@ -393,7 +400,7 @@ footer {
 }
 
 .form-group button {
-    float: right;
+    width: 100%;
     margin-top: 1rem;
     padding: 2rem;
     font-size: 1.6rem;
@@ -409,6 +416,10 @@ footer {
     box-shadow: 10px 10px 5px 2px var(--clr-primary-light);
     background-color: var(--clr-primary-light);
     transform: translate(-10px, -10px);
+}
+
+.submit-container {
+    margin: 0 0 0 auto;
 }
 
 .footer-section {
@@ -522,5 +533,9 @@ footer {
 
     .home-container {
         grid-template-columns: 1fr;
+    }
+
+    .submit-container {
+        width: 100%;
     }
 }
