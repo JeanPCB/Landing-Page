@@ -7,9 +7,9 @@ IMPORTERD FONTS:
 :root {
     /* Colors */
     --clr-primary: #0D1736;
+    --clr-primary-light: #101f4a;
     --clr-secondary: #fff;
     --clr-secondary-darker: #a5a5a5;
-    --clr-primary-light: #101f4a;
     --clr-tertiary: #c86d12;
     --clr-tertiary-light: #ff8000;
 
