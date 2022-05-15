@@ -1,7 +1,5 @@
 # Landing Page de Revisão 
 
-(🧱 em construção 🧱)
-
 *Landing Page básica com intuito de revisar conhecimentos passados e implementar novos*
 
 - **Tecnologias Foco:** <br>
