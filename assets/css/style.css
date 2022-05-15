@@ -125,6 +125,7 @@ footer {
 .intro-section {
     display: flex;
     flex-flow: column wrap;
+    justify-content: center;
     min-width: 100%;
     min-height: 100vh;
     padding: var(--medium-gap) var(--biggest-gap);
