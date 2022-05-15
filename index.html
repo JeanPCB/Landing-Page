@@ -18,14 +18,14 @@
     <span id="home"></span>
 
     <input id="close-menu" class="close-menu" type="checkbox" aria-label="close menu" role="button">
-    <label for="close-menu" title="close menu"></label>
+    <label class="close-menu-label" for="close-menu" title="close menu"></label>
     <aside class="menu">
         <a class="logo-anchor" href="./index.html">
             <h1>LOGO</h1>
         </a>
 
         <nav class="navbar">
-            <ul class="menu-list">
+            <ul onclick="document.querySelector('#close-menu').checked = false;" class="menu-list">
                 <li>
                     <a href="#home" class="menu-item">
                         Home
@@ -359,6 +359,8 @@
     <footer class="footer-section">
         <p>Desenvolvido por <a target="_blank" href="https://github.com/JeanPCB">JeanPCB</a></p>
     </footer>
+
+    <a class="back-to-top" href="#home"> ⮝ </a>
 </body>
 
 </html>
