@@ -472,7 +472,7 @@ footer {
     border-radius: 10px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
     .menu-spacing {
         display: none;
     }
@@ -482,7 +482,8 @@ footer {
         flex-direction: column;
         justify-content: center;
         top: 0;
-        gap: var(--large-gap);
+        gap: var(--gap);
+        padding: 0;
         display: none;
     }    
 
@@ -518,9 +519,13 @@ footer {
 
     .navbar .menu-list{
         flex-direction: column;
-        gap: var(--large-gap);
+        gap: var(--gap);
         text-align: center;
         margin-bottom: 3rem;
+    }
+
+    .navbar .menu-list li:last-child a {
+        margin: 2rem;
     }
 
     .col-2-grid {
