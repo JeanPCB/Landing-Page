@@ -447,4 +447,8 @@ footer {
     .col-3-grid {
         grid-template-columns: 1fr;
     }
+
+    .home-container {
+        grid-template-columns: 1fr;
+    }
 }
