@@ -466,7 +466,7 @@ footer {
     .menu {
         min-height: 100vh;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         top: 0;
         gap: var(--large-gap);
         display: none;
@@ -474,6 +474,7 @@ footer {
 
     .menu h1 {
         font-size: 4rem;
+        margin-top: 6rem;
     }
 
     .menu a {
