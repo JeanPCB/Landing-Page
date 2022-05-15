@@ -448,8 +448,8 @@ footer {
     font-size: 2rem;
     padding: 1.1rem 1.5rem;
     position: fixed;
-    bottom: 2rem;
-    right: 2rem;
+    bottom: 1rem;
+    right: 1rem;
     z-index: 2000;
     color: var(--clr-primary);
     background-color: var(--clr-secondary);
@@ -487,8 +487,8 @@ footer {
         font-size: 2rem;
         border: 1px solid var(--clr-primary);
         border-radius: 10px;
-        top: 2rem;
-        right: 2rem;
+        top: 1rem;
+        right: 1rem;
         color: var(--clr-primary);
         background-color: var(--clr-secondary);
     }
