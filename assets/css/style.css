@@ -330,6 +330,7 @@ footer {
 
 #gallery .gallery-img img {
     transition: var(---main-trans-time);
+    width: 100%;
 }
 
 #gallery .gallery-img img:hover {
@@ -439,7 +440,7 @@ footer {
     width: 100%;
 }
 
-@media (max-width: 80rem) {
+@media (max-width: 800px) {
     .col-2-grid {
         grid-template-columns: 1fr;
     }
