@@ -6,8 +6,12 @@
 <div><img src='./assets/gifs/overview.gif' height='400'></div>
 <br>
 
-### Animações do Menu
+### Animações do menu
 <div><img src='./assets/gifs/menu-animations.gif' height='400'></div>
+<br>
+
+### Navegação através do menu
+<div><img src='./assets/gifs/navigation.gif' height='400'></div>
 <br>
 
 - **Tecnologias Foco:** <br>
