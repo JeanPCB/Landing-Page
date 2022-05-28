@@ -2,6 +2,10 @@
 
 *Landing Page básica com intuito de revisar conhecimentos passados e implementar novos*
 
+### Animações do menu
+<div><img src='./assets/gifs/menu-animations.gif' height='400'></div>
+<br>
+
 - **Tecnologias Foco:** <br>
 ✔ HTML <br>
 ✔ CSS
