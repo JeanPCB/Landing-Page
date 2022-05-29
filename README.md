@@ -36,7 +36,7 @@
 ✔ HTML <br>
 ✔ CSS
 
-🔗 <a href="https://jeanpcb.github.io/Landing-Page-Revisao/">Clique aqui pra conferir</a> 😉
+🔗 <a href="https://landing-page-revisao.netlify.app">Clique aqui pra conferir</a> 😉
 
 ## Descrição
 
