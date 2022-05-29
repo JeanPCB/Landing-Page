@@ -26,8 +26,8 @@
   
   <tbody>
     <tr>
-      <td><img src='./assets/gifs/menu-animations.gif' width='500'></td>
-      <td><img src='./assets/gifs/navigation.gif' width='500'></td>
+      <td><img src='./assets/gifs/navigation.gif' width='700'></td>
+      <td><img src='./assets/gifs/menu-animations.gif' width='300'></td>
     </tr>
   </tbody>
 </table>
