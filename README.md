@@ -2,17 +2,35 @@
 
 *Landing Page básica com intuito de revisar conhecimentos passados e implementar novos*
 
-### Visão Geral
-<div><img src='./assets/gifs/overview.gif' height='400'></div>
-<br>
+<table>
+  <thead>
+    <tr>
+      <th>Visão Geral</th>
+    </tr>
+  </thead>
+  
+  <tbody>
+    <tr>
+      <td><img src='./assets/gifs/overview.gif' width='1000'></td>
+    </tr>
+  </tbody>
+</table>
 
-### Animações do menu
-<div><img src='./assets/gifs/menu-animations.gif' height='400'></div>
-<br>
-
-### Navegação através do menu
-<div><img src='./assets/gifs/navigation.gif' height='400'></div>
-<br>
+<table>
+  <thead>
+    <tr>
+      <th>Navegação através do menu</th>
+      <th>Animações do menu</th>
+    </tr>
+  </thead>
+  
+  <tbody>
+    <tr>
+      <td><img src='./assets/gifs/menu-animations.gif' width='500'></td>
+      <td><img src='./assets/gifs/navigation.gif' width='500'></td>
+    </tr>
+  </tbody>
+</table>
 
 - **Tecnologias Foco:** <br>
 ✔ HTML <br>
